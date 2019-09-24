@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails',        '5.1.6'
+gem 'bcrypt',         '3.1.12'
 gem 'bootstrap-sass', '3.3.7'
 gem 'puma',         '3.9.1'
 gem 'sass-rails',   '5.0.6'
@@ -14,7 +15,8 @@ gem 'jbuilder',     '2.7.0'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.6'
-  gem 'capybara', '2.4.0' 
+  gem 'factory_bot_rails', '~> 4.10.0'
+  gem 'capybara', '2.4.0'
   #gem 'sqlite3', '1.3.13'
   #gem 'byebug',  '9.0.6', platform: :mri
 end
@@ -32,6 +34,9 @@ group :test do
   gem 'minitest-reporters',       '1.1.14'
   gem 'guard',                    '2.13.0'
   gem 'guard-minitest',           '2.4.4'
+  gem 'shoulda-matchers',
+    git: 'https://github.com/thoughtbot/shoulda-matchers.git',
+    branch: 'rails-5'
 end
 
 group :production do
