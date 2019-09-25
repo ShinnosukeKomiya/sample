@@ -18,7 +18,7 @@ group :development, :test do
   gem 'factory_bot_rails', '~> 4.10.0'
   gem 'capybara', '2.4.0'
   #gem 'sqlite3', '1.3.13'
-  #gem 'byebug',  '9.0.6', platform: :mri
+  gem 'byebug',  '9.0.6', platform: :mri
 end
 
 group :development do
