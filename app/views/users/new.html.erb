@@ -3,10 +3,13 @@
 
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
+    <!--　formの送信先を指定　-->
     <%= form_for(@user, url: signup_path) do |f| %>
       <%= render 'shared/error_messages' %>
 
+      <!--　userモデルのname属性を指定　-->
       <%= f.label :name %>
+      <!--　ラベル付きのテキストフィールド要素を作成　-->
       <%= f.text_field :name, class: 'form-control' %>
 
       <%= f.label :email %>
