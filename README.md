@@ -24,7 +24,7 @@ $ bundle install --without production
 ```
 $ rails db:migrate
 ```
-
+プルリクテスト
 最後に、テストを実行してうまく動いているかどうか確認してください。
 
 ```
